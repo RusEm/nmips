@@ -5,7 +5,7 @@ rm -rf $BUILD_DIR || echo "No existing build dir, sadge"
 mkdir $BUILD_DIR
 
 # SDK_DOWNLOAD="https://hex-rays.com/products/ida/support/ida/idasdk76.zip"
-SDK_DOWNLOAD="https://repair-help.ru/test/SDK.zip"
+
 echo "[*] Downloading idasdk..."
 # wget --http-user=$IDA_USER --http-password=$IDA_PASS $SDK_DOWNLOAD -O $BUILD_DIR/idasdk.zip
 wget $SDK_DOWNLOAD -O $BUILD_DIR/sdk.zip
