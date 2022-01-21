@@ -22,16 +22,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-11, windows-latest]
+        os: [windows-latest]
         include:
-          - os: ubuntu-latest
-            pkg: sudo apt-get install -y openssl wget
-            artifact: libnmips.so
-            name: linux
-          - os: macos-11
-            pkg: brew install openssl wget
-            artifact: lib*nmips.dylib
-            name: macos
           - os: windows-latest
             pkg: choco install openssl wget
             artifact: '*nmips.dll'
