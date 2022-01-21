@@ -89,7 +89,7 @@ actual_lib_path = sdk_lib / ida_str
 ida_dep = declare_dependency(
   link_args: ['-L'+actual_lib_path, '-lida'],
   include_directories: sdk_inc_dir,
-  is_system: true
+  #is_system: true
 )
 
 summary({
